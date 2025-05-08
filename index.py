@@ -8,7 +8,6 @@ device_id_3 = "h2b3n4"
 data_type = type(device_id_3)
 print(data_type) 
 
-
 # reassing a variable
 device_id_5 = "u38me0"
 print(device_id_5)
@@ -52,3 +51,45 @@ if comercial_hours == False:
     print("Tentativa de login feita durante o horário comercial")
 else:
     print("Tentativa de login feita fora do horário comercial")
+
+# create a while loop
+max_devices = 5
+i = 1
+
+while i < max_devices:
+    print("User can still connect to aditional devices")
+    i = i + 1
+print("User has reached maximum number of connected devices")
+
+# repeat a specific action
+connection_attempts = 5
+for i in range(connection_attempts):
+    print("Connection could not be established")
+
+# define a function
+def greet_employee():
+    print("Welcome! You're logged in.")
+# call a function
+greet_employee()
+
+# greet employees by name and last name
+def greet_employee(first_name, last_name):
+    print("Welcome! You're logged in", first_name, last_name)
+greet_employee("Kiara", "Carter")
+
+# explore input and output of print
+print("This is a String, but", 75, "is a number")
+
+# explore input and output of type
+print(type("security"))
+print(type(73.2))
+
+# explore max
+a = 1
+b = 2
+c = 3
+print(max(a,b,c))
+
+# use the sorted function
+usernames = ["elarson", "bmoreno", "tshah", "gilmore", "eraab", "alek"]
+print(sorted(usernames))
