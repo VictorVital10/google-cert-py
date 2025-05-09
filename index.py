@@ -93,3 +93,60 @@ print(max(a,b,c))
 # use the sorted function
 usernames = ["elarson", "bmoreno", "tshah", "gilmore", "eraab", "alek"]
 print(sorted(usernames))
+
+# convert an integer into a string
+new_string = str(123)
+print(type(new_string))
+
+# print the length of a string "Hello"
+print(len("Hello "))
+
+# concatenate two strings
+print("Hello " + "Python")
+
+# apply upper method to "Hello"
+print("Hello".upper())
+
+# apply lower method to "Hello"
+print("Hello".lower())
+
+# extract a slice from a string
+print("HELLO"[1:4])
+
+# use the index string method
+print("HELLO".index("E"))
+
+print("Ubuntu".index("U"))
+
+# extract from a list
+my_list = ["DEV","OPS","ENGINEER"]
+print(my_list[1])
+
+# concatenate two lists
+my_list = ["A", "B", "C", "D", "E"]
+number_list = [1, 2, 3, 4, 5]
+print(my_list + number_list)
+
+# extract the first three characters from a list of IP addresses
+IP = ["198.xxx.yyy.zz", "199.xxx.yyy.zz", "197.xxx.yyy.zz", "196.xxx.yyy.zz"]
+networks = []
+for address in IP:
+    networks.append(address[0:3])
+print(networks)
+
+# list of approved users and devices
+approved_users = ["elarson", "bmoreno", "sgilmore", "eraab", "gesparza"]
+approved_devices = ["8rp2k75", "hl0s5o1", "4n482ts", "a307vir", "3rcv4w6"]
+username = "sgilmore"
+device_id = "4n482ts"
+if username in approved_users:
+    print("The user", username, "is approved to connect the system.")
+else:
+    print("The user", username, "is not approved to connect the system.")
+
+ind = approved_users.index(username)
+print(ind)
+
+if username in approved_users and device_id in approved_devices:
+    print("The username", username, "is approved to access the system")
+    print(device_id, "is the assigned device for", username)
