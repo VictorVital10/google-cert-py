@@ -150,3 +150,9 @@ print(ind)
 if username in approved_users and device_id in approved_devices:
     print("The username", username, "is approved to access the system")
     print(device_id, "is the assigned device for", username)
+
+# expressões regulares
+import re
+texto = ("Segurança da Informação é essencial")
+resultado = re.search("essencial", texto) # search procura o padrão em qualquer parte da string.
+print(resultado.group())        
